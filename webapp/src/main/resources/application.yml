@@ -70,11 +70,11 @@ spring:
   datasource:
     platform: postgres
     # the db user name
-    username: postgres
+    username: ${POSTGRES_USER}
     # the db user password
-    password: postgres
+    password: ${${POSTGRES_USER}}
     # here 'sta' is the name of the database
-    url: jdbc:postgresql://localhost:5432/sta
+    url: ${SPRING_DATASOURCE_URL}
     initialization-mode: always
     hikari:
       connection-timeout: 20000
