@@ -88,9 +88,9 @@ spring:
     active: vanilla
   datasource:
     platform: postgres
-    username: postgres
-    password: postgres
-    url: jdbc:postgresql://localhost:5432/sta
+    username: ${POSTGRES_USER}
+    password: ${POSTGRES_PASSWORD}
+    url: ${SPRING_DATASOURCE_URL}
     initialization-mode: always
     hikari:
       maximum-pool-size: 10
